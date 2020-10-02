@@ -16,7 +16,7 @@ function deleleteShortcut()
 {
     #echo $(awk '/^'$1'/ {next} $1 '  $dirConfig"shortcuts") > $dirConfig"shortcuts"
     var=$(awk '{ if($1 != '$1') print $0;}'  $dirConfig"shortcuts");
-    echo "$var" > $dirConfig"shortcuts"
+    echo "$var" > $dirConfig"shortcuts" 
 }
 function gotoShortcut() 
 {
