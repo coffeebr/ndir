@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/lib/index.min.js">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath@0.6.5/css/texmath.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/vscode-texmath.css">
+
+</head>
+<body class="markdown-body">
+<h2 id="sobre-85">Sobre:</h2>
+<p>Este pequeno script foi criado apenas para aprendizado pessoal em shell script e para facilitar na locomoção em diretórios que acesso com frequência.</p>
+<h2 id="modo-de-usar-86">Modo de usar</h2>
+<h3 id="para-criar-um-atalho-86">Para criar um atalho:</h3>
+<pre><code>nd -a &lt;atalho&gt; &lt;diretório&gt;
+</code></pre>
+<h3 id="para-deletar-um-atalho-86">Para deletar um atalho:</h3>
+<pre><code>nd -d &lt;atalho&gt;
+</code></pre>
+<h3 id="para-listar-os-atalhos-86">Para listar os atalhos:</h3>
+<pre><code>nd -l
+</code></pre>
+<h3 id="para-exibir-ajuda-19">Para exibir ajuda:</h3>
+<pre><code>nd -h
+</code></pre>
+<h3 id="para-acessar-atalho-86">Para acessar atalho:</h3>
+<pre><code>nd &lt;atalho&gt;
+</code></pre>
+<h2 id="instalando-86">Instalando:</h2>
+<p>Para a instalação é necessário clonar o repositório (necessita a presença da ferramenta git):
+git clone https://github.com/emanuel-alves/ndir.git &lt;diretório&gt;/ndir</p>
+<h4 id="dar-permissão-de-escrita-86">Dar permissão de escrita</h4>
+<pre><code>sudo chmod +x &lt;diretório&gt;/ndir.sh
+</code></pre>
+<p>E por fim criar um alias no arquivo de configuração do seu shell (&quot;~/.zshrc&quot;, &quot;.~/bashrc&quot;, entre outros):</p>
+<pre><code>alias nd=&quot;. &lt;localDeDownload&gt;/.ndir.sh&quot;
+</code></pre>
+<p>O uso do &quot;.&quot; no início do alias é necessário para que seja possível a mudança de diretório no shell principal. Outra opção é usando o source:
+alias nd=&quot;. <localDeDownload>/.ndir.sh&quot;</p>
+
+</body></html>
